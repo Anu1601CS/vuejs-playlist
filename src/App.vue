@@ -102,7 +102,7 @@
     <v-content>
       <v-container fluid fill-height>
         <v-layout justify-center align-center>
-          <media-content></media-content>
+          <!--- Content -->
         </v-layout>
       </v-container>
     </v-content>
@@ -182,7 +182,6 @@
     </v-dialog>
   </v-app>
 </template>
-
 <script>
   export default {
     data: () => ({
@@ -214,13 +213,18 @@
             { text: 'Other contacts' }
           ]
         },
-        { icon: 'settings', text: 'Settings' },
+        { icon: 'settings', text: 'Settings' ,fun: 'check'},
         { icon: 'chat_bubble', text: 'Send feedback' },
         { icon: 'help', text: 'Help' },
         { icon: 'phonelink', text: 'App downloads' },
         { icon: 'keyboard', text: 'Go to the old version' }
       ]
     }),
+    methods: {
+      check: function() {
+        console.log("sds");
+      }
+    },
     props: {
       source: String
     }
