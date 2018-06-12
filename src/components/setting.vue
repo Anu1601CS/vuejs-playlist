@@ -68,7 +68,7 @@
   export default {
     data () {
       return {
-        dialog: false,
+        dialog: ture,
         notifications: false,
         sound: true,
         widgets: false
